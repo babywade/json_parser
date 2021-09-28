@@ -1,0 +1,23 @@
+{
+    date: "20140523",
+    stories: [
+        {
+            images:["http:\/\/pic1.zhimg.com\/4e7ecded780717589609d950bddbf95c.jpg"]
+            type: 0,
+            id: 3930445,
+            ga_prefix: "052321",
+            title: "中国古代家具发展到今天有两个高峰，一个两宋一个明末（多图）", 
+       },
+    ...
+    ],
+    top_stories: [
+        {
+            image:"http:\/\/pic4.zhimg.com\/8f209bcfb5b6e0625ca808e43c0a0a73.jpg",
+            type:0,
+            id:8314043,
+            ga_prefix:"051717",
+            title:"怎样才能找到自己的兴趣所在，发自内心地去工作？"
+       }, 
+      ... 
+    ] 
+}
