@@ -12,7 +12,7 @@
                 "command": "powershell",
                 "args": [
                     "-c",
-                    "mingw32-make"
+                    "make"
                 ]
             },
             "linux": {
@@ -34,35 +34,38 @@
             "label": "build & run",
             "type": "shell",
             "windows": {
-                "command": "powershell",
+                "command": "bash",
                 "args": [
                     "-c",
-                    "'mingw32-make run'"
+                    "make run"
                 ]
             },
             "linux": {
                 "command": "bash",
                 "args": [
                     "-c",
-                    "'make run'"
+                    "make run"
                 ]
             },
             "osx": {
                 "command": "bash",
                 "args": [
                     "-c",
-                    "'make run'"
+                    "make run"
                 ]
-            }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "label": "clean",
             "type": "shell",
             "windows": {
-                "command": "powershell",
+                "command": "bash",
                 "args": [
                     "-c",
-                    "'mingw32-make clean'"
+                    "'make clean'"
                 ]
             },
             "linux": {
