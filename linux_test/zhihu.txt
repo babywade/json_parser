@@ -6,7 +6,7 @@
             type: 0,
             id: 3930445,
             ga_prefix: "052321",
-            title: "中国古代家具发展到今天有两个高峰，一个两宋一个明末（多图）", 
+            title: "only English 1", 
        },
     ],
     top_stories: [
@@ -15,7 +15,7 @@
             type:0,
             id:8314043,
             ga_prefix:"051717",
-            title:"怎样才能找到自己的兴趣所在，发自内心地去工作？"
+            title:"only English 2"
        },  
     ] 
 }
