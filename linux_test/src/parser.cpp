@@ -61,13 +61,18 @@ int Parser(vector<Token>& tokenGroup, LatestNews& latestNewsJSON) {
             } else if (elem.first == "title") {
                 story.title = elem.second;
             }
+            i++;
         } else if (tokenGroup[i].GetType() == COMMA) {
             i++;
         } else if (isObj == true && isArray == true && tokenGroup[i].GetType() == END_OBJ) {
             latestNewsJSON.AddStories(story);
             i++;
+        } else { //尚不完备
+            i++;
         }
+        
     }
+    return parser_pass;
 }
 
 int StringToInt(string& str) {

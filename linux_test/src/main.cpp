@@ -27,10 +27,11 @@ int main(int argc, char *argv[])
 	// 首先将输入文件转化为token序列
 	vector<Token> tokenGroup;
 	int res = start(str, tokenGroup);
-	cout << res << endl;
+	cout << "res:" << res << endl;
 
 	LatestNews latestNewsJSON;
 	Parser(tokenGroup, latestNewsJSON);
+	cout << "finish" << endl;
 }
 
 void test1() {

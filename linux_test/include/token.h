@@ -33,7 +33,7 @@ public:
 		this->type = type;
 		this->value = value;
 	}
-	string GetValue() {
+	std::string GetValue() {
 		return this->value;
 	}
 	TokenType GetType() {

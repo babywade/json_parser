@@ -12,7 +12,6 @@ int start(string& str, vector<Token>& tokenGroup) {
     Token token;
     bool isString = false;
     bool isNum = false;
-    bool isChar = false;
     for(int i = 0; i < str.size(); ) {
         if (str[i] == ' ' || str[i] == '\r' || str[i] == '\n') {
             cout << str[i] << endl;

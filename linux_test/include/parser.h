@@ -6,6 +6,10 @@
 #include <vector>
 #include "token.h"
 
+#define parser_null 0
+#define parser_pass 1
+#define parser_error 2
+
 typedef struct {
 	std::string image;
 	int type;
@@ -19,13 +23,14 @@ public:
 	LatestNews() {
 
 	}
-	int SetDate(string& date) {
+	void SetDate(std::string& date) {
 		this->date = date;
+
 	}
-	int AddStories(Story& story) {
+	void AddStories(Story& story) {
 		this->stories.emplace_back(story);
 	}
-	int AddTopStories(Story& story) {
+	void AddTopStories(Story& story) {
 		this->top_stories.emplace_back(story);
 	}
 private:
@@ -35,4 +40,5 @@ private:
 };
 
 int Parser(std::vector<Token>& tokenGroup, LatestNews& latestNewsJSON);
+int StringToInt(std::string& str);
 #endif
