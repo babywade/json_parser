@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
 
 	// 首先将输入文件转化为token序列
 	vector<Token> tokenGroup;
+	cout << "start" << endl;
 	int res = start(str, tokenGroup);
 	cout << "res:" << res << endl;
 
