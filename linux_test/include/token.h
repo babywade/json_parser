@@ -1,3 +1,6 @@
+#ifndef TOKEN_H__
+#define TOKEN_H__ 
+
 #include <string>
 #include <vector>
 
@@ -30,6 +33,12 @@ public:
 		this->type = type;
 		this->value = value;
 	}
+	string GetValue() {
+		return this->value;
+	}
+	TokenType GetType() {
+		return this->type;
+	}
 private:
 	TokenType type;
 	std::string value;
@@ -38,3 +47,4 @@ private:
 int start(std::string& str, std::vector<Token>& tokenGroup);
 bool isNull(int c);
 Token readString();
+#endif

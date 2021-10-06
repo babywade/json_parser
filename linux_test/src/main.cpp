@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include "token.h"
+#include "parser.h"
 
 using namespace std;
 
@@ -27,6 +28,9 @@ int main(int argc, char *argv[])
 	vector<Token> tokenGroup;
 	int res = start(str, tokenGroup);
 	cout << res << endl;
+
+	LatestNews latestNewsJSON;
+	Parser(tokenGroup, latestNewsJSON);
 }
 
 void test1() {
